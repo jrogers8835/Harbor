@@ -1,0 +1,43 @@
+.App {
+  text-align: left; }
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 10px;
+  color: white; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }
+
+.ports {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .ports .port_post {
+    display: flex; }
+
+.dock {
+  background-color: #703000;
+  height: 25vh; }
+  .dock.top-dock {
+    height: 50px; }
+  .dock.divider {
+    width: 30px; }
+  .dock.spacer {
+    background-color: lightblue; }
+
+.ocean {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+  .ocean .addMenuIconBound {
+    padding: 0 !important; }
+    .ocean .addMenuIconBound .addMenuIcon {
+      width: 100% !important;
+      height: 100% !important; }
