@@ -13,7 +13,7 @@ import './App.css';
 var dock_ports = [1,2,3,4,5];
 class App extends Component {
   render() {
-    var dock_port_divs = dock_ports.map((item) => {
+    let dock_port_divs = dock_ports.map((item) => {
       return (
         <div class="port_post">
           <div class="dock divider"></div>
@@ -21,6 +21,13 @@ class App extends Component {
         </div>
       );
     });
+
+    let boat_divs = dock_ports.map((item) => {
+      return (
+        <div class="boat">
+        </div>
+      )
+    })
     return (
         <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
           <div className="App">
@@ -41,6 +48,9 @@ class App extends Component {
               <div class="dock divider"></div>
             </div>
             <div class="ocean">
+              <div class="boats">
+                {boat_divs}
+              </div>
               <IconMenu iconButtonElement ={<IconButton class="addMenuIconBound"><div><Add className="addMenuIcon" /></div></IconButton>}
                     anchorOrigin={{horizontal: 'left', vertical: 'top'}}
                     targetOrigin={{horizontal: 'right', vertical: 'top'}}>

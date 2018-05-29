@@ -28,6 +28,19 @@
 	justify-content: space-between;
 }
 
+.boats {
+	.boat{
+		display: flex;
+		background-color: orange;
+		height:20px;
+		width:20px;
+		margin:5px;
+	}
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+
 .dock {
 	background-color: #703000;
 	height: 25vh;
